@@ -5,3 +5,9 @@
 - `python3 -m venv {DirName}` 
 - `source bin/activate` 
 - /home/og/workspace-python/test-env 上記cmdを実行
+
+## django 構築用
+- https://qiita.com/gragragrao/items/373057783ba8856124f3
+- https://qiita.com/gragragrao/items/9a85a372a9c3eec06243
+
+
