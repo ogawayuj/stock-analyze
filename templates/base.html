@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+{% load bootstrap4 %}
+{% bootstrap_css %}
+{% bootstrap_javascript jquery='slim' %}
+{% load static %}
+
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+        <!--
+        <link rel="stylesheet" href="https://cccabinet.jpn.org/bootstrap4/css/style.css">
+        -->
+        <title>株価分析アプリ</title>
+
+        {% block extra_css %}{% endblock %}
+    </head>
+
+    <body>
+        <div id="warpper">
+        <!---        -->
+            <nav class="navbar navbar-light bg-light">
+                <a class="navbar-brand">Header</a>
+                <!--
+                <div class="navbar-default sidebar" role="navigation">
+                    <ul class="nav" id="side-menu">
+                        <li><a href="/worker_list/"><i class="fa fa-bar-chart" aria-hidden="true"></i>  Worker一覧</a></li>
+                    </ul>
+                </div>
+                -->
+            </nav>
+            {% block body %}
+            {% endblock %}
+        </div>
+    </body>
+
+</html>
