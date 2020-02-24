@@ -1,3 +1,4 @@
 django
 django-debug-toolbar
+django-bootstrap4
 psycopg2-binary
