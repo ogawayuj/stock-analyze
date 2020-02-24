@@ -7,17 +7,21 @@
 - /home/og/workspace-python/test-env 上記cmdを実行
 
 ## django 構築用
+### 参考URL
 - https://qiita.com/Saku731/items/ed64190a12a4498b9446
 - https://qiita.com/gragragrao/items/373057783ba8856124f3
 - https://qiita.com/gragragrao/items/9a85a372a9c3eec06243
+### debug toolbar
+- https://wonderwall.hatenablog.com/entry/2018/03/13/233000
 
 ## 構築時CMD履歴
 ```
 # DjangoとDB接続用のlibをInstall
-$ pip install -r requirements.txt
+$ pip3 install -r requirements.txt
 
 # appの全体設定に関連するファイルを格納
 $ django-admin startprojcet app_config 
 
-# 
-``` 
+# app単体のフォルダを作成
+$ cd app_config 
+$ django-admin startapp app_folder
