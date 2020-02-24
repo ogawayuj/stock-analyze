@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'app_folder.apps.AppFolderConfig',
     'bootstrap4',
+    'debug_toolbar',
 ]
 
 MIDDLEWARE = [
@@ -55,7 +56,11 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'debug_toolbar.middleware.DebugToolbarMiddleware',
 ]
+
+# for DEBUG_TOOLBAR
+INTERNAL_IPS = ['127.0.0.1']
 
 ROOT_URLCONF = 'app_config.urls'
 

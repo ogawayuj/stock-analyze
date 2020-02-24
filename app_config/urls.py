@@ -20,8 +20,16 @@ from django.conf import settings
 from django.conf.urls.static import static
 import app_config.views as views
 
+from django.conf import settings
+
 urlpatterns = [
     path('app_folder/', include('app_folder.urls')),
     path('', views.index, name='index'),
     path('admin/', admin.site.urls),
 ]
+
+if settings.DEBUG:
+    import debug_toolbar
+    urlpatterns = [
+        path('__debug__/', include(debug_toolbar.urls)),
+    ] + urlpatterns
